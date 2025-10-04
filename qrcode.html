@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pro QR Generator with Bulk & History</title>
+
+  <!-- QR Code Styling Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.6.0/lib/qr-code-styling.js"></script>
+  <!-- JSZip for ZIP downloads -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>⚡ Advanced QR Generator</h1>
+  <p>Generate, customize, and save QR codes with history & bulk mode!</p>
+
+  <div class="container">
+    <label>Mode:</label>
+    <select id="modeSelect">
+      <option value="single">Single QR</option>
+      <option value="bulk">Bulk Mode (one per line)</option>
+    </select>
+
+    <label>Text or Links:</label>
+    <textarea id="qrText" placeholder="Enter one or multiple lines (if bulk mode)"></textarea>
+
+    <label>Width (px):</label>
+    <input type="number" id="qrWidth" value="250" min="100">
+
+    <label>Height (px):</label>
+    <input type="number" id="qrHeight" value="250" min="100">
+
+    <label>Margin (px):</label>
+    <input type="number" id="qrMargin" value="2" min="0">
+
+    <label>Foreground Color:</label>
+    <input type="color" id="qrColorDark" value="#000000">
+
+    <label>Background Color:</label>
+    <input type="color" id="qrColorLight" value="#ffffff">
+
+    <label>QR Shape:</label>
+    <select id="qrShape">
+      <option value="square">Square</option>
+      <option value="dots">Dots</option>
+      <option value="rounded">Rounded</option>
+    </select>
+
+    <label>Center Image (optional):</label>
+    <input type="file" id="centerImage" accept="image/*">
+
+    <button id="generateBtn">Generate QR Code(s)</button>
+    <button id="downloadAll" style="display:none;">Download All as ZIP</button>
+    <button id="clearHistory">Clear History</button>
+
+    <div id="preview-area"></div>
+  </div>
+
+  <!-- Link to JS -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  color: #1e3a8a;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
+
+.container {
+  background: #fff;
+  padding: 20px 25px;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+  color: #111827;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+input[type="file"] {
+  margin-top: 5px;
+}
+
+/* 🎨 FIXED Color Picker Styling */
+input[type="color"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 50px;
+  height: 35px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: none;
+}
+
+input[type="color"]:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+#preview-area {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.qr-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-item canvas, .qr-item img {
+  border-radius: 10px;
+}
+
+#downloadAll {
+  background: #16a34a;
+  margin-top: 10px;
+}
+
+#downloadAll:hover {
+  background: #15803d;
+}
+
+#clearHistory {
+  background: #dc2626;
+  margin-top: 10px;
+}
+
+#clearHistory:hover {
+  background: #b91c1c;
+}
