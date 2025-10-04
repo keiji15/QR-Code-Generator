@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #dbeafe, #eff6ff);
@@ -126,4 +127,43 @@ button:hover {
 
 #clearHistory:hover {
   background: #b91c1c;
+}
+
+.links-section {
+  margin-top: 40px;
+  text-align: center;
+  color: #333;
+}
+
+.links-section h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.links-section p {
+  font-size: 14px;
+  color: #555;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.links-container a {
+  text-decoration: none;
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.links-container a:hover {
+  background: #1e40af;
+  transform: scale(1.05);
 }
